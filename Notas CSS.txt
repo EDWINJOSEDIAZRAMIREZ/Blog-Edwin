@@ -1,0 +1,82 @@
+
+ETIQUETAS:
+
+    body    selector por etiqutas
+    # id    selecctor
+    . class selecitor de clase
+    * selecciona todo el html |aplica solo cuando no se halla dado estilo
+    Nota: el orden en  que se escrinra el css influeya la prioridad que se ejecute ultima linea tiene prioridad
+
+COLORES:
+
+    exagesinal
+    .titulao{
+        color:#ff000;
+    }
+
+    rgb
+    .titulo{
+        color: rgb(0, 255, 255);
+
+BORDER A LO ELEMENTOS:
+
+    .titulo {
+            grosor color  estylo del birde
+        border: 5px black solid;
+            opciones:
+                dotted
+                dashed
+                solid
+                groove
+                ridge
+                inset
+                outset // tridimencional
+                none
+                hedden
+
+MEDIDAS RELATIVAS
+
+    La mas usada es el rem debido que toma como referencia a tod el html
+
+    border-radius: 1rem; = a 1 pixel;
+
+COLOR DE FONDO DE CADA BLOQUE
+
+    #fondo{
+        background-color: blue;
+                            rgba(0, 0, 0, 1)
+    
+            Con rgba le podenmos indicar la transparencia 
+        opacity: 0.3; | para darle transparencia
+        background-image: url("direccion imagen"); | para que colocar una img de fondo
+        background-size: cover; |para darle tamano al fonfo de la img
+                         400px 300px;
+                         auto;
+
+        background-repeat: no-repeat; | para que la imagen no se repita
+        background-position: center top; | Posicion de la img este ej es centro arriba
+    }
+
+POSICIONAMIENTO DE UN ELEMENTOS
+
+.margen {
+    background-color: blue; | color de fondo del ELEMENTOS
+    margin: 15px; | la magen que va tener el elmentos 
+    padding: 30px 15px 5px; | el espacio que tiene el elemento prierm arriba derecha abajo
+    border: solid 1px black; | el borde y color del elemento
+    height: 200px; | alto del elmentos
+    width: 50px; | ancho del elemento
+    overflow: scroll; | para que se vea todo el contenido del elemento
+    ouline: 1px solid red; | propiedad que se coloca por fuera del borden pero po dentro del margin
+}
+
+BOX MODEL | modelo de caja ?
+
+DARLE ESTILO A UN TESTO
+
+    font-family: verdana, Geneva, Tahoma, sans-serif;| estilo de la fuente o de las letras
+    test-align: center; | texto quede centrado, izquierda, derecha, justificado
+    text-decoration: underline; | decoracion a los txt linea debajo, linea tachada
+                     line-through; | tachada
+                     overline: | linea por ensima del txt
+                     text-shadow: 3px 5px 5px blue; |sombrear el txt para que se mueva derecha abajo difuminado y color

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Edwin</title>
+    <style>
+        table, th,  td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <!--tablas-->
+    <table style="width: 500px;">
+        <thead> <!--columnas-->
+            <tr><!-- tablas-->
+                <th>Producto</th>
+                <th>Precio</th> <!-- nombre cabecera-->
+            </tr>
+        </thead>
+        <tbody> <!--filas -->
+            <tr>
+                <td>carne</td> <!--elementos estandar dentro de la tablas-->
+                <td>$15.000</td>
+            </tr>
+            <tr>
+                <td>huevos</td>
+                <td>$16.000</td>
+            </tr>
+            <tr>
+                <td>Arros con pollo</td>
+                <td>$20.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>Total</td>
+            <td>$51.000</td>
+        </tfoot><!--estiqueta pie o total-->
+    </table>
+
+
+    <!--Lista no ordenadas-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <!--lista ordenada-->
+    <ol>
+        <li value="50">Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>Elemento</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">sub elemento 1</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 2</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+
+    <!--Etique form para poner todos los datos para recopilar informacion usuario
+        *
+    -->
+    <form action="/formulario" method="post"> <!--action"donde garda el formulario" method"el metodo de gardar base datos"-->
+        <label for="nombre">Nombre</label> <!--se indica al usuario que coloque-->
+        <input value="chanchito" type="text" id="nombre" name="nombre" placeholder="Nombre"> <!--Campo para q usuario ingrese datos *  id "identificador" * name:"nombre var" * palecholder:"indicar que coloca"-->
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="feliz" type="text" type="text" id="apellido" name="apellido" placeholder="Apellido"> <!--value"ingresar un valor por defecto-->
+        
+        <!--Area de texto para que coloque una nota o queja-->
+        <label for="comentario">Comentario</label>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Notas de comentarios">Texto por defecto</textarea>
+        <!--boton type"tipo de boton"-->
+        <button type="button">Enviar</button>
+        <button type="reset">Reseterar</button>
+        <button type="submit">subir</button>
+        <button type="menu">Menu</button>
+    </form>
+
+    <!--Titulos desde nivel 1 hasta 6 max-->
+    <h1>Primero</h1>
+    <h2>Segundo</h2>
+    <h3>Tercero</h3>
+    <h4>Cuarto</h4>
+    <h5>Quinto</h5>
+    <h6>Sexto</h6>
+
+    <!--Parrafos-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <!--linea devidir-->
+    <hr>
+    <h2>Felipe</h2>
+                            <!--texto dentro de otras etiquetas <SPAN>-->
+    <p>Lorem ipsum dolor sit, amet <span style="color: blue;">Lorem ipsum dolor sit.</span> consectetur 
+        <!--saltos de linea BR-->
+        <br> adipisicing elit. Soluta</p>
+
+        <!-- estiqueta de ipervinculo para ir a otra pagina <a>
+        * propiedad para ir a URL href=""
+        * propiedad para que abra en una nuve pagina target="_blank"    
+        
+        -->
+        
+    <a target="_blank" href="url/dondeQuieroIr ">Ir a Blog</a>
+
+    <!--etiqueta de igamgen <img src:"direccionImg"> -->
+    <img src="./img/notas.png" alt="">
+
+
+</body>
+</html>
